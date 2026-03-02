@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+
+    <!--Link for awesome fonts icons, so that the icons can show for my socials-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family:'Poppins',sans-serif;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        header{
+            margin-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            filter: drop-shadow(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+         .logo{
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover{
+            transform:scale(1.1);
+        }
+
+        nav a{
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover,
+        nav a.active{
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+        }
+
+        @media(max-width:955px){
+            nav{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                border-left: 3px solid #b74b4b;
+                border-bottom: 3px solid #b74b4b;
+                border-bottom-left-radius: 2rem;
+                padding: 1rem solid;
+                background-color: #161616;
+                border-top: 0.1rem solid rgba(0,0,0,0.1);
+            }
+
+            nav.active{
+                display: block;
+            }
+
+            nav a{
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+            }
+
+            nav a:hover,
+            nav a.active{
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-bottom: 0.5rem solid #b74b4b;
+            }
+        }
+
+         /*The styling for my social icons*/
+        .social-icons a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: transparent;
+            border: 0.2rem solid #b74b4b;
+            font-size: 2rem;
+            border-radius: 50%;
+            margin: 3rem 1.5rem 3rem 0;
+            transition: 0.3s ease;
+            color: #b74b4b;
+ 
+        }
+
+        .social-icons a:hover{
+            color:black;
+            transform:scale(1.3) translateY(-5px);
+            background-color:#b74b4b;
+            box-shadow: 0 0 25px #b74b4b;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            border-top: 1px solid rgb(80, 80, 80);
+            padding-top: 20px; 
+            background-color: rgb(80, 80, 80);
+            padding-bottom: 20px;
+        }
+
+        #copyright{
+            font-size: 12px;
+        }
+
+        
+           
+        
+</style>
+
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ruwaldo</a>            <!--logo of a company but I chose the logo to be my name because Im not yet in any sort of company yet--> 
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="education.html" >Education</a>
+            <a href="aboutMe.html" >About me</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+
+    </header>
+
+    <br/>
+<footer>
+    <section>
+        <h3>Social</h3> 
+
+        <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/broetel-temporary-last-name-a3097a396/"><i class="fa-brands fa-linkedin"></i></a>     
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/Ruwaldo217990"><i class="fa-brands fa-x-twitter"></i></a> 
+        <a href="https://www.instagram.com/ruwallas02/"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+        <!-- Copyright -->
+        <div id="copyright">
+                <p>&copy; 2026 Ruwaldo</p>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
