@@ -26,10 +26,12 @@
 
         body{
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
+            display: flex;
             overflow-x: hidden;
-            background-color: black;
-            color: white;
+            flex-direction: column;
+            background-color: #0f0f0f;
+            color: #f1f1f1;
         }
 
         header{
@@ -49,7 +51,7 @@
 
          .logo{
             font-size: 3rem;
-            color: #b74b4b;
+            color: #e63946;
             font-weight: 800;
             cursor: pointer;
             transition: 0.5s ease;
@@ -70,8 +72,8 @@
 
         nav a:hover,
         nav a.active{
-            color: #b74b4b;
-            border-bottom: 3px solid #b74b4b;
+            color: #e63946;
+            border-bottom: 3px solid #e63946;
         }
 
         @media(max-width:955px){
@@ -80,8 +82,8 @@
                 top: 0;
                 right: 0;
                 width: 30%;
-                border-left: 3px solid #b74b4b;
-                border-bottom: 3px solid #b74b4b;
+                border-left: 3px solid #e63946;
+                border-bottom: 3px solid #e63946;
                 border-bottom-left-radius: 2rem;
                 padding: 1rem solid;
                 background-color: #161616;
@@ -102,7 +104,7 @@
             nav a.active{
                 padding: 1rem;
                 border-radius: 0.5rem;
-                border-bottom: 0.5rem solid #b74b4b;
+                border-bottom: 0.5rem solid #e63946;
             }
         }
 
@@ -114,33 +116,32 @@
             width: 4rem;
             height: 4rem;
             background-color: transparent;
-            border: 0.2rem solid #b74b4b;
+            border: 0.2rem solid #e63946;
             font-size: 2rem;
             border-radius: 50%;
-            margin: 3rem 1.5rem 3rem 0;
+            margin: 1rem;
             transition: 0.3s ease;
-            color: #b74b4b;
+            color: #e63946;
  
         }
 
         .social-icons a:hover{
-            color:black;
-            transform:scale(1.3) translateY(-5px);
-            background-color:#b74b4b;
-            box-shadow: 0 0 25px #b74b4b;
+            color: #0f0f0f;
+            transform:scale(1.2) translateY(-3px);
+            background-color:#e63946;
+            box-shadow: 0 0 25px #e63946;
         }
 
         footer{
-            position: absolute;
-            bottom: 0;
+            
             align-items: center;
             text-align: center;
             width: 100%;
             margin: 0 auto;
             justify-content: center;
-            border-top: 1px solid rgb(80, 80, 80);
+            border-top: 1px solid #2a2a2a;
             padding-top: 20px; 
-            background-color: rgb(80, 80, 80);
+            background-color: #141414;
             padding-bottom: 20px;
             
         }
@@ -154,23 +155,28 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 100px;
+            gap: 20px;
+            flex:1;
         }
 
         .card{
             width: 325px;
-            background-color: #b4b4b4;
+            background-color: #1a1a1a;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
             margin: 20px;
+            transition: transform 0.3s ease, 
+            box-shadow 0.3s ease;
         }
 
         .card i{
-            padding-left: 150px;
-            padding-top: 5px;
-            background-color: transparent;
+            display: block;
             font-size: 4rem;
-            color: #b74b4b;
+            text-align: center;
+            padding: 20px 0;
+            color: #e63946;
+            padding-left: 140px;
         }
 
         .card-content{
@@ -178,20 +184,31 @@
         }
 
         .card-content h3{
-            font-size: 28px;
+            font-size: 24px;
+            text-align: center;
             margin-bottom: 8px;
+            color: #f1f1f1;
         }
 
         .card-content p{
-            color:#667;
-            font-size: 15px;
-            line-height: 1.3;
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4),
+                        0 0 50px #e63946;
+
         }
 
         #title{
             display:flex;
             justify-content: center;
             padding-top: 200px;
+            color: #e63946;
         }
 
         .wave span {
