@@ -49,7 +49,7 @@
 
         .logo{
             font-size: 3rem;
-            color: #b74b4b;
+            color: #e63946;
             font-weight: 800;
             cursor: pointer;
             transition: 0.5s ease;
@@ -70,8 +70,8 @@
 
         nav a:hover,
         nav a.active{
-            color: #b74b4b;
-            border-bottom: 3px solid #b74b4b;
+            color: #e63946;
+            border-bottom: 3px solid #e63946;
         }
 
         @media(max-width:955px){
@@ -80,8 +80,8 @@
                 top: 0;
                 right: 0;
                 width: 30%;
-                border-left: 3px solid #b74b4b;
-                border-bottom: 3px solid #b74b4b;
+                border-left: 3px solid #e63946;
+                border-bottom: 3px solid #e63946;
                 border-bottom-left-radius: 2rem;
                 padding: 1rem solid;
                 background-color: #161616;
@@ -102,7 +102,7 @@
             nav a.active{
                 padding: 1rem;
                 border-radius: 0.5rem;
-                border-bottom: 0.5rem solid #b74b4b;
+                border-bottom: 0.5rem solid #e63946;
             }
         }
 
@@ -126,7 +126,7 @@
         }
 
         span{
-            color: #b74b4b;
+            color: #e63946;
         }
 
         .home-content h3{
@@ -149,7 +149,7 @@
             position: relative;
             width: 32vw;
             border-radius: 50%;
-            box-shadow: 0 0 25px solid #b74b4b;
+            box-shadow: 0 0 25px solid #e63946;
             cursor: pointer;
             transition: 0.2s linear;
         }
@@ -167,19 +167,19 @@
             width: 4rem;
             height: 4rem;
             background-color: transparent;
-            border: 0.2rem solid #b74b4b;
+            border: 0.2rem solid #e63946;
             font-size: 2rem;
             border-radius: 50%;
             margin: 3rem 1.5rem 3rem 0;
             transition: 0.3s ease;
-            color: #b74b4b;
+            color: #e63946;
         }
 
         .social-icons a:hover{
             color:black;
             transform:scale(1.3) translateY(-5px);
-            background-color:#b74b4b;
-            box-shadow: 0 0 25px #b74b4b;
+            background-color:#e63946;
+            box-shadow: 0 0 25px #e63946;
         }
 
     /*The styling of MY span text in my home page*/
@@ -196,7 +196,7 @@
     /*The span animation before the word*/
         .typing-text span::before{
             content:"software Developer";
-            color:#b74b4b;
+            color:#e63946;
             animation: words 20s infinite;
         }
 
@@ -215,7 +215,7 @@
     /*@keyframes I use them for my diffrent works to display on my home page and change*/
         @keyframes cursor{
             to{
-                border-left: 3px solid #b74b4b;
+                border-left: 3px solid #e63946;
             }
         }
 
@@ -263,8 +263,21 @@
 
 
 
+            .download-btn {
+                display: inline-block;
+                padding: 1rem 2rem;
+                margin-left: 1rem;
+                background-color: #e63946;
+                color: white;
+                font-weight: bold;
+                border-radius: 0.5rem;
+                transition: 0.3s ease;
+        }
 
-
+            .download-btn:hover {
+                background-color: #942f2f;
+                transform: scale(1.05);
+        }   
 
 
 
@@ -293,7 +306,7 @@
 
     <section class="home">
         <div class="home-img">
-            <img src="https://ruwaldobooysen-ai.github.io/MIE_JAVA_2026_BOOR.github.io/images/IMG-20240723-WA0009.jpg" alt="an image of Ruwaldo Booysen">
+            <img src="C:\Users\ruwal\Downloads\IMG-20240723-WA0009.jpg" alt="an image of Ruwaldo Booysen">
         </div>
 
         <div class="home-content">
@@ -303,14 +316,17 @@
             <br/>
             <br/>
             <br/>
-            <p>BLALJJKH JHKJHF OOSJHH SP:AKKF</p>
+            <p>Hi, I'm Ruwaldo! I'm an aspiring software developer passionate about creating interactive web experiences and learning new technologies. I enjoy coding, designing clean interfaces, and bringing ideas to life online. Check out my CV or connect with me on social media!</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/broetel-temporary-last-name-a3097a396/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="https://x.com/Ruwaldo217990"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/ruwallas02/"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Get my CV</a>
+
+                        <!-- Download CV Button -->
+                <a href="#" download="#" class="btn download-btn">Download My CV</a>
+                     
         </div>
     </section>
 
@@ -333,5 +349,7 @@
 
 
 
-</html>
 
+
+
+</html>
