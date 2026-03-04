@@ -79,7 +79,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 30%;
+                width: 20%;
                 border-left: 3px solid #e63946;
                 border-bottom: 3px solid #e63946;
                 border-bottom-left-radius: 2rem;
@@ -236,31 +236,42 @@
         }
 
     /*I use @media for my home page to addjust the size and width for diffrent devices like mobile*/
-        @media(max-width: 1000px){
-            .home{
-                gap:4rem;
-            }
-        }
+        
 
         @media(max-width:995px){
-            .home{
-                flex-direction: column;
-                margin: 5rem 4rem;
-            }
 
-            .home.home-content h3{
-                font-size:2.5rem;
-            }
+    .home{
+        flex-direction: column;
+        margin: 5rem 2rem;
+        text-align: center;   
+    }
 
-            .home-content h1{
-                font-size: 5rem;
-            }
-            .home-img img{
-                width: 70vw;
-                margin-top: 4rem;
-            }
-        }
+    .home .home-content{
+        padding: 0;
+    }
 
+    .home .home-content h1{
+        font-size: 4rem;
+        padding-left: 0;      
+    }
+
+    .home .home-content h3{
+        font-size: 1.8rem;
+        padding-left: 0;      
+    }
+
+    .home .home-content p{
+        font-size: 1.6rem;
+        padding-left: 20px; 
+        padding-right: 20px;    
+
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
 
 
             .download-btn {
@@ -316,7 +327,13 @@
             <br/>
             <br/>
             <br/>
-            <p>Hi, I'm Ruwaldo! I'm an aspiring software developer passionate about creating interactive web experiences and learning new technologies. I enjoy coding, designing clean interfaces, and bringing ideas to life online. Check out my CV or connect with me on social media!</p>
+            <p>Hi, I'm Ruwaldo! I'm an aspiring software developer 
+                passionate about creating interactive web experiences 
+                and learning new technologies. I enjoy coding, 
+                designing clean interfaces, and bringing ideas to 
+                life online. Check out my CV or connect with me on 
+                social media!
+                </p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/broetel-temporary-last-name-a3097a396/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/ruwaldobooysen-ai"><i class="fa-brands fa-github"></i></a>

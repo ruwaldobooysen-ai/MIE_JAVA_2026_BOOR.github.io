@@ -77,28 +77,32 @@
         }
 
         @media(max-width:955px){
-            nav{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 30%;
-                border-left: 3px solid #e63946;
-                border-bottom: 3px solid #e63946;
-                border-bottom-left-radius: 2rem;
-                padding: 1rem solid;
-                background-color: #161616;
-                border-top: 0.1rem solid rgba(0,0,0,0.1);
-            }
+           nav{
+        position: static;         
+        width: 100%;
+        display: flex;             
+        justify-content: center;   
+        align-items: center;
+        gap: 2rem;                 
+        background-color: transparent;
+        border: none;
+        padding-right: 200px;
+    }
 
-            nav.active{
-                display: block;
-            }
+    nav a{
+        display: block;     
+        font-size: 1.6rem;
+        margin: 0;                 
+    }
 
-            nav a{
-                display: block;
-                font-size: 2rem;
-                margin: 3rem 0;
-            }
+    .logo{
+            font-size: 1.2rem;
+            color: #e63946;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+            padding-top: 120px;
+        }
 
             nav a:hover,
             nav a.active{
