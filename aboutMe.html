@@ -165,12 +165,60 @@
                 transform: scale(1.05);
         }   
 
-    p{
-        flex-direction: column;
-        margin: 5rem 4rem;
-        font-size:1.2rem;
-        
+    /* ABOUT SECTION */
+.about {
+    margin-top: 12rem; 
+    padding: 5rem 9%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #e63946;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #e63946;
+}
+
+.about-text p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Fade-In Animation */
+.about-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/* Optional: Add icon spacing */
+.about-text i {
+    margin-left: 0.5rem;
+    color: #e63946;
+}
 
 </style>
 
@@ -192,23 +240,73 @@
 
     </header>
 
-<div>
+<section class="about">
+    <div class="about-container">
+        
+        <div class="about-text">
+            <h1>About Me</h1>
+<p>
+    Hello! My name is Ruwaldo Booysen, and I am an 
+    aspiring web developer with a strong passion for 
+    technology and digital design. I enjoy creating 
+    websites that are not only visually appealing but 
+    also structured, responsive, and easy to use.
+</p>
+
+<p>
+    I started learning web development out of curiosity, 
+    wanting to understand how websites are built and how 
+    they function behind the scenes. What began as simple 
+    experimentation quickly developed into a serious 
+    interest. Since then, I have been building my skills 
+    in HTML and CSS, focusing on clean code, modern 
+    layouts, and user-friendly design principles.
+</p>
+
+<p>
+    I am motivated by growth and self-improvement.
+    Every project I work on is an opportunity to learn
+    something new and refine my abilities. I enjoy 
+    problem-solving, improving performance, and 
+    continuously challenging myself to become better than 
+    I was yesterday.
+</p>
+
+<p>
+    My long-term goal is to build a successful
+    career in software development, contribute to
+    impactful projects, and continue expanding my
+    knowledge in both front-end and back-end 
+    technologies.
+</p>
+
+</br>
+</br>
+</br>
+
+<h2>My Interests</h2>
+
     <p>
-        BLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        BLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        fgjkfffskjdjjfjfjkfjkfskjfsjkfskjfsjkfsfjfsjfsjkfsjkfsjfsjfsjfjsjfsjkdfsjkf
-        nfnsfkkjfskjfskjfskjfsfkjfskjfskjfskjfskjfsfskjfskjfskjfskjfskjfs
-        kjfskjfskjfskjfskjfskjfskjfskjfskjfskjfskjsfjkfskjfskjfskjfsjkfsjkfskjkjf
-        blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        Outside of coding, I have a strong passion for 
+        music and gaming. I love playing the 
+        guitar <i class="fa-solid fa-guitar"></i> and 
+        teaching myself how to play my favorite songs. 
+        I also enjoy competitive 
+        gaming <i class="fa-solid fa-gamepad"></i> and 
+        streaming my gameplay for an audience, which helps 
+        me develop communication skills and confidence.
     </p>
-</div>
 
-
-
-    <div>
-          <!-- Download CV Button -->
+            <!-- Download CV Button -->
          <a href="#" download="#" class="btn download-btn">Download My CV</a>
+        </div>
+
     </div>
+</section>
+
+
+
+
 
 
       <br/>
