@@ -8,204 +8,8 @@
     <!--Link for awesome fonts icons, so that the icons can show for my socials-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<style>
-
- *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            font-family:'Poppins',sans-serif;
-        }
-
-        html{
-            font-size: 62.5%;
-        }
-
-        body{
-            width: 100%;
-            min-height: 100vh;
-            overflow-x: hidden;
-            background-color: #0f0f0f;
-            color: #f1f1f1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header{
-            margin-top: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 9%;
-            background-color: transparent;
-            filter: drop-shadow(10px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
-
-         .logo{
-            font-size: 3rem;
-            color: #e63946;
-            font-weight: 800;
-            cursor: pointer;
-            transition: 0.5s ease;
-        }
-
-        .logo:hover{
-            transform:scale(1.1);
-        }
-
-        nav a{
-            font-size: 1.8rem;
-            color: white;
-            margin-left: 4rem;
-            font-weight: 500;
-            transition: 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-
-        nav a:hover,
-        nav a.active{
-            color: #e63946;
-            border-bottom: 3px solid #e63946;
-        }
-
-        @media(max-width:955px){
-            nav{
-        position: static;         
-        width: 100%;
-        display: flex;             
-        justify-content: center;   
-        align-items: center;
-        gap: 2rem;                 
-        background-color: transparent;
-        border: none;
-        padding-right: 200px;
-    }
-
-    nav a{
-        display: block;     
-        font-size: 1.6rem;
-        margin: 0;                 
-    }
-
-    .logo{
-            font-size: 1.2rem;
-            color: #e63946;
-            font-weight: 800;
-            cursor: pointer;
-            transition: 0.5s ease;
-            padding-top: 120px;
-        }
-
-            nav a:hover,
-            nav a.active{
-                padding: 1rem;
-                border-radius: 0.5rem;
-                border-bottom: 0.5rem solid #e63946;
-            }
-        }
-
-         /*The styling for my social icons*/
-        .social-icons a{
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 4rem;
-            height: 4rem;
-            background-color: transparent;
-            border: 0.2rem solid #e63946;
-            font-size: 2rem;
-            border-radius: 50%;
-            margin: 3rem 1.5rem 3rem 0;
-            transition: 0.3s ease;
-            color: #e63946;
-        }
-
-        .social-icons a:hover{
-            color:black;
-            transform:scale(1.3) translateY(-5px);
-            background-color:#e63946;
-            box-shadow: 0 0 25px #b74b4b;
-        }
-
-        footer{
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 0 auto;
-            justify-content: center;
-            border-top: 1px solid #2a2a2a;
-            padding-top: 20px; 
-            background-color: #141414;
-            padding-bottom: 20px;
-        }
-
-        #copyright{
-            font-size: 12px;
-        }
-
-        .card-container{
-            display:flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 100px;
-            gap: 20px;
-            flex: 1;
-        }
-
-        .card{
-            width: 325px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-            margin: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-    
-
-
-        .card img{
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            
-        }
-        
-        .card:hover{
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.4),
-                        0 0 50px #b74b4b;
-
-
-        }
-
-        .card-content{
-            padding: 16px;
-        }
-
-        .card-content h3{
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
-
-        .card-content p{
-            color:#667;
-            font-size: 15px;
-            line-height: 1.3;
-        }
-           
-        
-</style>
-
+<!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css\skills.css">
 
 </head>
 <body>
@@ -219,6 +23,10 @@
             <a href="aboutMe.html" >About me</a>
             <a href="contact.html" >Contact</a>
         </nav>
+
+        <button id="theme-toggle">                              <!--Add a button for light and dark mode-->
+    <i class="fa-solid fa-moon"></i>
+</button>
 
     </header>
 
@@ -271,6 +79,16 @@
         </div>
     </section>
 </footer>
+
+<script src="index.js"></script>
+
+<script>
+const toggle = document.getElementById("theme-toggle");
+
+toggle.onclick = function() {
+    document.body.classList.toggle("light-mode");
+};
+</script>
 
 </body>
 </html>

@@ -8,297 +8,9 @@
 <!--Link for awesome fonts icons, so that the icons can show for my socials-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            font-family:'Poppins',sans-serif;
-        }
-
-        html{
-            font-size: 62.5%;
-        }
-
-        body{
-            width: 100%;
-            height: 100vh;
-            overflow-x: hidden;
-            background-color: black;
-            color: white;
-        }
-
-        header{
-            margin-top: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 9%;
-            background-color: transparent;
-            filter: drop-shadow(10px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .logo{
-            font-size: 3rem;
-            color: #e63946;
-            font-weight: 800;
-            cursor: pointer;
-            transition: 0.5s ease;
-        }
-
-        .logo:hover{
-            transform:scale(1.1);
-        }
-
-        nav a{
-            font-size: 1.8rem;
-            color: white;
-            margin-left: 4rem;
-            font-weight: 500;
-            transition: 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-
-        nav a:hover,
-        nav a.active{
-            color: #e63946;
-            border-bottom: 3px solid #e63946;
-        }
-
-        @media(max-width:955px){
-            nav{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 20%;
-                border-left: 3px solid #e63946;
-                border-bottom: 3px solid #e63946;
-                border-bottom-left-radius: 2rem;
-                padding: 1rem solid;
-                background-color: #161616;
-                border-top: 0.1rem solid rgba(0,0,0,0.1);
-            }
-
-            nav.active{
-                display: block;
-            }
-
-            nav a{
-                display: block;
-                font-size: 2rem;
-                margin: 3rem 0;
-            }
-
-            nav a:hover,
-            nav a.active{
-                padding: 1rem;
-                border-radius: 0.5rem;
-                border-bottom: 0.5rem solid #e63946;
-            }
-        }
-
-        section{
-            min-height: 100vh;
-            padding: 5rem 9% 5rem;
-        }
-        
-        .home{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8rem;
-            background-color: black;
-        }
-
-        .home .home-contenth1{
-            font-size: 6rem;
-            font-weight: 700;
-            line-height: 1.3;
-        }
-
-        span{
-            color: #e63946;
-        }
-
-        .home-content h3{
-            
-            width: 500px;
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .home-content p{
-            font-size: 1.6rem;
-        }
-
-        .home-img{
-            border-radius: 50%;
-        }
-
-        .home-img img{
-            position: relative;
-            width: 32vw;
-            border-radius: 50%;
-            box-shadow: 0 0 25px solid #e63946;
-            cursor: pointer;
-            transition: 0.2s linear;
-        }
-
-        .home-img img:hover{
-            font-size: 1.8rem;
-            font-weight: 500;
-        }
-
-    /*The styling for my social icons*/
-        .social-icons a{
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 4rem;
-            height: 4rem;
-            background-color: transparent;
-            border: 0.2rem solid #e63946;
-            font-size: 2rem;
-            border-radius: 50%;
-            margin: 3rem 1.5rem 3rem 0;
-            transition: 0.3s ease;
-            color: #e63946;
-        }
-
-        .social-icons a:hover{
-            color:black;
-            transform:scale(1.3) translateY(-5px);
-            background-color:#e63946;
-            box-shadow: 0 0 25px #e63946;
-        }
-
-    /*The styling of MY span text in my home page*/
-        .typing-text{
-            font-size: 34px;
-            font-weight: 600;
-            min-width: 280px;
-        }
-
-        .typing-text span{
-            position: relative;
-        }
-
-    /*The span animation before the word*/
-        .typing-text span::before{
-            content:"software Developer";
-            color:#e63946;
-            animation: words 20s infinite;
-        }
-
-    /*The span animation afther the word*/
-        .typing-text span::after{
-            content:"";
-            background-color: black;
-            position: absolute;
-            width: calc(100% + 8px);
-            height: 100%;
-            border-left: 3px solid black;
-            right: -8;
-            animation: cursor 0.6s infinite;           
-        }
-
-    /*@keyframes I use them for my diffrent works to display on my home page and change*/
-        @keyframes cursor{
-            to{
-                border-left: 3px solid #e63946;
-            }
-        }
-
-    /*These are the diffrent works or words that will be displayed in a sequence*/
-        @keyframes words{
-            0%, 25%{
-                content: "Web Developer";
-            }
-            26%, 50%{
-                content: "Software Developer";
-            }
-            51%, 75%{
-                content: "Web Designer";
-            }
-            76%, 100%{
-                content: "Script Writer";
-            }
-        }
-
-    /*I use @media for my home page to addjust the size and width for diffrent devices like mobile*/
-        
-
-        @media(max-width:995px){
-
-    .home{
-        flex-direction: column;
-        margin: 5rem 2rem;
-        text-align: center;   
-    }
-
-    .home .home-content{
-        padding: 0;
-    }
-
-    .home .home-content h1{
-        font-size: 4rem;
-        padding-left: 0;      
-    }
-
-    .home .home-content h3{
-        font-size: 1.8rem;
-        padding-left: 0;      
-    }
-
-    .home .home-content p{
-        font-size: 1.6rem;
-        padding-left: 20px; 
-        padding-right: 20px;    
-
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-
-
-            .download-btn {
-                display: inline-block;
-                padding: 1rem 2rem;
-                margin-left: 1rem;
-                background-color: #e63946;
-                color: white;
-                font-weight: bold;
-                border-radius: 0.5rem;
-                transition: 0.3s ease;
-        }
-
-            .download-btn:hover {
-                background-color: #942f2f;
-                transform: scale(1.05);
-        }   
-
-
-
-
-
-
-
-
-
-    </style>
+<!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css\index.css">
+  
 </head>
 
 <body>
@@ -312,6 +24,10 @@
             <a href="aboutMe.html" >About me</a>
             <a href="contact.html" >Contact</a>
         </nav>
+
+        <button id="theme-toggle">                        <!--Add a button for light and dark mode-->
+    <i class="fa-solid fa-moon"></i>
+</button>
 
     </header>
 
@@ -341,13 +57,21 @@
                 <a href="https://www.instagram.com/ruwallas02/"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
-                        <!-- Download CV Button -->
+                        <!-- Download CV Button I don't have my CV yet so i have added nothing-->
                 <a href="#" download="#" class="btn download-btn">Download My CV</a>
                      
         </div>
     </section>
 
+<script src="index.js"></script>
 
+<script>
+const toggle = document.getElementById("theme-toggle");
+
+toggle.onclick = function() {
+    document.body.classList.toggle("light-mode");
+};
+</script>
 
 </body>
 
